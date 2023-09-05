@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>C.T.Y Model College | Website</title>
+    <style>
+      h1 {
+        margin: 1em 0;
+        text-transform: capitalize;
+      }
+
+      body {
+        height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        font-size: large;
+        line-height: 2em;
+      }
+
+      nav {
+        background-color: #2d3c4e;
+        padding: 1rem 0;
+        position: relative;
+      }
+
+      #nav-bar-login-btn{
+            height: 100%; 
+            box-sizing: border-box; 
+            font-size: 1.6em; 
+            color: #fff; 
+            text-decoration: none; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+             position: absolute; 
+             right: 0; 
+             top: 0; 
+             width: 11rem; 
+             background-color: #ff9e0d;
+        }
+
+      nav ul {
+        color: #ffffff;
+        list-style-type: none;
+        display: flex;
+        column-gap: 3em;
+        justify-content: center;
+      }
+
+      nav ul a {
+        text-decoration: none;
+        color: #ffffff;
+        height: 100%;
+        font-size: 1.6em;
+      }
+      nav ul a:hover {
+        border-bottom: 7px solid white;
+        color: #ddd;
+      }
+
+      #top {
+        width: 100%;
+        height: 80%;
+        background-image: url("submerged_kid_4k-3840x2160.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        line-height: 1.5em;
+        font-size: large;
+      }
+
+      #top-content {
+        background-color: rgba(20, 20, 20, 0.4);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 3em;
+        justify-content: center;
+        color: white;
+      }
+      #top-content h1{
+        margin: 0;
+      }
+      #description {
+        width: 80%;
+        text-align: center;
+        font-weight: 600;
+        
+      }
+
+      #top-content a {
+        text-decoration: none;
+        color: inherit;
+        border: 3px solid #ff9e0d;
+        text-align: center;
+        padding: 1.5em 3em;
+        background-color: #ff9e0d;
+        box-sizing: border-box;
+        font-weight: 600;
+        border-radius: 0.3em;
+      }
+
+      #top-content a:hover {
+        background-color: transparent;
+      }
+
+
+
+      /* ******************************************* */
+
+      .what-we-offer{
+            display: flex;
+            flex-direction: column;}
+
+        .offers{
+            
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 3em;
+        }
+
+        .offer{
+            text-align: left;
+            width: 300px;
+            display: grid;
+            gap: 1em;
+        }
+        .offer p, .offer h3{margin: 0; }
+        
+        .offer img{
+            width: 100%;
+            height: 100%;
+        }
+       
+
+        
+        .events{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2em;
+            margin: 0 1%;
+            justify-content: center;
+        }
+
+        .events .event img{width: 100%; border-radius: 12px 12px 0 0;}
+
+        .events .event {
+            position: relative;
+            border: 2px solid #ececec;
+            border-radius: 12px;
+            width: 280px;
+        }
+
+        .events .event .date-container{
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 12px 0 0 0;
+            background-color: #ff9e0d;
+            color: #fff;
+            font-size: 1em;
+            height: 3.8rem;
+            padding: 0.5em 0.7em;
+        }
+
+        .events .event .date-container b{
+            font-size: 1.5em;
+        }
+        .events .event .date-container p{
+            margin: 0;
+        }
+
+        main{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            row-gap: 3em;
+        }
+
+        .gallery{
+            margin-bottom: 2%;
+        }
+
+        .gallery .gallery-items-div{
+            display: flex;
+            margin: 0 2%;
+            gap: 1em;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            /* height: 240px; */
+        }
+
+        .gallery .gallery-items-div .gallery-item{
+            height: 150px;
+        }
+
+        .gallery .gallery-items-div .gallery-item img{
+            width: 250px;
+            height: 100%;
+        }
+
+        footer{
+            background-color: #2d3c4e;
+            text-align: center;
+            height: 100px;
+            color: white;
+            font-weight: 400;
+        }
+
+        footer ul{
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            justify-items: center;
+            margin: 0;
+        }
+       
+        .about, .enquiries{
+            width: 80%;
+            margin: auto;
+            margin-top: 2em;
+            background-color: #ececec;
+            padding: 2em;
+            border-radius: 0.4em;
+            box-shadow: 0 5px 6px hsla(213, 27%, 24%, 0.363);
+        }
+
+        .section-headings{
+            font-weight: lighter;
+        }
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact Us</a></li>
+       
+      </ul>
+
+      <a href="login.html" id="nav-bar-login-btn">Login</a>
+
+    </nav>
+
+    <div id="top">
+      <div id="top-content">
+        <h1>Cty Group Of Schools</h1>
+        <p id="description">
+          CTY is a Conventional school. It gives quality western and islamic
+          education.The school has won many prizes and laurels in different
+          competitions and the school has the record of being the 3rd best
+          school in Ibadan.The school has standard classrooms for students,
+          standard hostels for boarding students, well equipped libraries, well
+          facilitated labouratories and computer rooms, staffrooms for male and
+          female teachers, the examination room, the principal's office.
+        </p>
+        <a href="#">Learn More About Us</a>
+      </div>
+    </div>
+
+
+    <main>
+
+        <div class="about">
+            <h1 class="section-headings">About Our School</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, quae? Molestias officiis, quidem amet dolorum assumenda quae, iste perferendis est totam quod praesentium vitae nisi quas voluptas! Illum temporibus perspiciatis animi placeat, eligendi tenetur dolore reprehenderit sequi similique dolor aut, quidem laborum voluptatibus aliquam vel pariatur ut! Quibusdam fuga eos rerum voluptate. Magni nostrum aut ipsam, illo asperiores nisi placeat recusandae debitis dolores a fugiat nulla quas aspernatur. Fugit, impedit enim! Harum sunt consectetur quisquam amet, optio ex? Eius quia voluptas modi impedit, nihil reiciendis eligendi tenetur commodi omnis optio esse, ipsam iste similique voluptate exercitationem autem, laudantium doloribus suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia accusantium veritatis eligendi ratione tempore impedit obcaecati nesciunt deleniti beatae aspernatur ut labore numquam non neque quod repudiandae asperiores, sequi illum.</p>
+           
+        </div>
+
+
+        <div class="enquiries">
+            <h1 class="section-headings">Our Mission</h1>
+            <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat repudiandae corporis eligendi accusamus assumenda, deleniti rerum nobis suscipit sunt adipisci! Quos fugit hic delectus tempore iste temporibus sunt labore totam.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut harum in quod accusantium praesentium laboriosam!</p>
+        </div>
+
+        <div class="what-we-offer">
+            <h1 class="section-headings">What We Offer</h1>
+            <div class="offers">
+
+                <div class="offer">
+                    <img src="submerged_kid_4k-3840x2160.jpg" alt="" class="offer-img" />
+                    <h3>Programming / Coding</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, eveniet ad. Dignissimos reprehenderit dicta animi optio veniam, porro sapiente ipsa.</p>
+                     
+                </div>
+                <div class="offer">
+                    <img src="submerged_kid_4k-3840x2160.jpg" alt="" class="offer-img" />
+                    <h3>Academic Excellence</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, eveniet ad. Dignissimos reprehenderit dicta animi optio veniam, porro sapiente ipsa.</p>
+                     
+                </div>
+                <div class="offer">
+                    <img src="submerged_kid_4k-3840x2160.jpg" alt="" class="offer-img" />
+                    <h3>In-depth knowledge about Allah</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, eveniet ad. Dignissimos reprehenderit dicta animi optio veniam, porro sapiente ipsa.</p>
+                     
+                </div>
+                <div class="offer">
+                    <img src="submerged_kid_4k-3840x2160.jpg" alt="" class="offer-img" />
+                    <h3>Conducive Learning Environment</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, eveniet ad. Dignissimos reprehenderit dicta animi optio veniam, porro sapiente ipsa.</p>
+                     
+                </div>
+                <div class="offer">
+                    <img src="submerged_kid_4k-3840x2160.jpg" alt="" class="offer-img" />
+                    <h3>Secular Skills Aquisition</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, eveniet ad. Dignissimos reprehenderit dicta animi optio veniam, porro sapiente ipsa.</p>
+                     
+                </div>
+                <div class="offer">
+                    <img src="submerged_kid_4k-3840x2160.jpg" alt="" class="offer-img" />
+                    <h3>Building Real World Machines</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, eveniet ad. Dignissimos reprehenderit dicta animi optio veniam, porro sapiente ipsa.</p>
+                     
+                </div>
+
+            </div>
+            
+        </div>
+
+
+        <div class="news-pages">
+            <h1 class="section-headings">Upcoming School Events</h1>
+           
+            <div class="events">
+                <div class="event">
+                    <img src="submerged_kid_4k-3840x2160.jpg" alt="" class="event-img" />
+                    <h3>Mid-Term Tests</h3>
+
+                    <div class="date-container">
+                        <b>30</b>
+                        <p>JULY</p>
+                    </div>
+                                         
+                </div>
+                <div class="event">
+                   
+                    <img src="submerged_kid_4k-3840x2160.jpg" alt="" class="event-img" />
+                    <h3>Official School Visit</h3>
+
+                    <div class="date-container">
+                        <b>30</b>
+                        <p>JULY</p>
+                    </div>
+                                         
+                </div>
+                <div class="event">
+                   
+                    <img src="submerged_kid_4k-3840x2160.jpg" alt="" class="event-img" />
+                    <h3>P.T.A Meetings</h3>
+
+                    <div class="date-container">
+                        <b>30</b>
+                        <p>JULY</p>
+                    </div>
+                                         
+                </div>
+                <div class="event">
+                   
+                    <img src="submerged_kid_4k-3840x2160.jpg" alt="" class="event-img" />
+                    <h3>Environmental Sanitation</h3>
+
+                    <div class="date-container">
+                        <b>30</b>
+                        <p>JULY</p>
+                    </div>
+                                         
+                </div>
+                <div class="event">
+                   
+                    <img src="submerged_kid_4k-3840x2160.jpg" alt="" class="event-img" />
+                    <h3>3-weeks Coding Bootcamp</h3>
+
+                    <div class="date-container">
+                        <b >30</b>
+                        <p>JULY</p>
+                    </div>
+                                         
+                </div>
+            </div>
+       
+       
+        </div>
+
+
+        <div class="gallery">
+            <h1 class="section-headings">Gallery</h1>
+            
+            <div class="gallery-items-div">
+
+                <div class="gallery-item">
+                    <img src="images/IMG_20230821_104322.jpg"  alt="">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/IMG_20230821_104358.jpg" alt="">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/IMG_20230821_113944.jpg" alt="">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/IMG_20230821_114803.jpg" alt="">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/IMG_20230821_114823.jpg" alt="">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/IMG_20230821_114829.jpg" alt="">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/IMG_20230821_114836.jpg" alt="">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/IMG_20230821_114840.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 - C.t.y college</p>
+        <ul>
+            <li><i class="fa fa-facebook">Facebook</i></li>
+            <li><i class="fa fa-instagram">Instagram</i></li>
+            <li><i class="fa fa-twitter">Twitter</i></li>
+            <li><i class="fa fa-snapchat">Snapchat</i></li>
+        </ul>
+    </footer>
+  </body>
+</html>

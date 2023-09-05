@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>C.T.Y Model College | Website</title>
+    <style>
+        #nav-bar-login-btn{
+            height: 100%; 
+            box-sizing: border-box; 
+            font-size: 1.6em; 
+            color: #fff; 
+            text-decoration: none; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+             position: absolute; 
+             right: 0; 
+             top: 0; 
+             width: 11rem; 
+             background-color: #ff9e0d;
+        }
+      h1 {
+        margin: 1em 0;
+        text-transform: capitalize;
+      }
+
+      body {
+        height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        font-size: large;
+        line-height: 2em;
+      }
+
+      nav {
+        background-color: #2d3c4e;
+        padding: 1rem 0;
+      }
+      nav ul {
+        color: #ffffff;
+        list-style-type: none;
+        display: flex;
+        column-gap: 3em;
+        justify-content: center;
+      }
+
+      nav ul a {
+        text-decoration: none;
+        color: #ffffff;
+        height: 100%;
+        font-size: 1.6em;
+      }
+      nav ul a:hover {
+        border-bottom: 7px solid white;
+        color: #ddd;
+      }
+
+      form{
+        width: 60%;
+        margin: auto;
+        margin-top: 5%;
+        height: 70%;
+        
+      }
+
+      form fieldset{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+
+      }
+      .inputfield{
+        box-sizing: border-box;
+        width: 100%;
+        height: 3.8em;
+        padding-left: 1.5em;
+        border-radius: 0.7em;
+        font-size: larger;
+      }
+     
+      #loginbtn{
+        align-self: flex-end;
+        height: 70px;
+        width: 7rem;
+        border-radius: 0.4em;
+        background-color: #2d3c4e;
+        color: white;
+        font-size: larger;
+      }
+
+      footer{
+            background-color: #2d3c4e;
+            text-align: center;
+            height: 100px;
+            color: white;
+            font-weight: 400;
+        }
+
+        footer ul{
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            justify-items: center;
+            margin: 0;
+            
+        }
+      
+    </style>
+  </head>
+
+  <body>
+    
+    <nav style="position: relative;">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+       
+        
+        <a href="login.html" id="nav-bar-login-btn">Login</a>
+      </nav>
+
+
+      <form onsubmit="submitDetails()" id="loginform">
+
+        <fieldset>
+            <legend><h1>Login to your dashboard</h1></legend>
+
+
+            <input type="text" class="inputfield" id="username" required="required" placeholder="Username">
+
+            <input type="password"  id="password" class="inputfield" required="required" placeholder="Password">
+
+            <input type="submit" id="loginbtn" value="Login">
+        </fieldset>
+
+
+      </form>
+
+
+      <footer>
+        <p>&copy; 2023 - C.t.y college</p>
+        <ul>
+            <li><i class="fa fa-facebook">Facebook</i></li>
+            <li><i class="fa fa-instagram">Instagram</i></li>
+            <li><i class="fa fa-twitter">Twitter</i></li>
+            <li><i class="fa fa-snapchat">Snapchat</i></li>
+        </ul>
+    </footer>
+
+
+
+    <script>
+      var uname = document.getElementById('username')
+      var pword = document.getElementById('password')
+      var loginform = document.getElementById('loginform')
+
+     console.log('U value: ', uname)
+
+      loginform.addEventListener('submit', function(e){
+        console.log(e)
+        e.preventDefault()
+      })
+
+      const students = {
+        tobidada:{username: 'tobidada', password: 'password', fullname: 'Dada Oluwatobi', age: 19, gender: "Male", soo : "Oyo State"},
+        kayode:{username: 'jamesola', password: 'password3', fullname: 'Dada Oluwatobi', age: 19, gender: "Male", soo : "Oyo State"},
+        tititobi:{username: 'titobi', password: 'password1', fullname: 'Dada Oluwatobi', age: 19, gender: "Male", soo : "Oyo State"}
+        
+      }
+
+      function submitDetails(e){
+        uname=document.getElementById("username").value;
+        pword=document.getElementById("password").value;
+        
+        if (students.hasOwnProperty(uname)){
+          if (students[uname].password==pword){
+            alert("congratulations   "+uname+"  you are logged in")
+            window.location.href="dashbord.html"
+
+          }
+          else{
+            alert("incorrect password")
+          }
+        }else{
+          alert("User Data dosent exist")
+        }
+      
+      
+
+      }
+
+
+
+    </script>
+  </body>
+</html>
